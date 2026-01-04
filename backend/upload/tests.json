@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Upload file",
+      "method": "POST",
+      "body": {
+        "file": "dGVzdA==",
+        "filename": "test.txt",
+        "content_type": "text/plain"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "url": "string",
+        "filename": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
